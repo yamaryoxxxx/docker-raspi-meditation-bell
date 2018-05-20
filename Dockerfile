@@ -19,6 +19,7 @@ RUN npm install -g nodemon
 COPY . /app
 WORKDIR /app
 RUN npm install
+RUN apt-get install -y alsa-utils
 
 # execute app
 CMD nodemon app.js
