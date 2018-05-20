@@ -5,9 +5,11 @@ module.exports = function(_params){
     return {
         exec: function(){
             if(!sound){
-                sound = new Sound(params.filename);
+                sound = new Sound().play(params.filename);
             }
-            sound.play();
+            else{
+                sound.resume();
+            }
             console.log('play', params.filename);
         }
     }
