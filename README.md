@@ -3,5 +3,5 @@ Ring bell at fixed time every day
 
 ```sh
 docker build -t raspi-meditation-bell .
-docker run -d --restart=always raspi-meditation-bell
+docker run -d --device /dev/snd:/dev/snd --restart=always raspi-meditation-bell
 ```
