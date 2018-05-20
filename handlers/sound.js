@@ -5,7 +5,7 @@ module.exports = function(_params){
     const params = _params;
     const player = new Sound();
     console.log(execSync('amixer scontrols'));
-    console.log(execSync(`amixer sset "PCM" ${params.volume}%`));    
+    console.log(execSync(`amixer sset "PCM" ${params.volume}`));    
            
     player.play(params.filename);
 
