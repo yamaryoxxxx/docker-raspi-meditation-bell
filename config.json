@@ -12,7 +12,7 @@
         },
         
         {
-            "cronTime": "* * * * *",
+            "cronTime": "20 15 * * *",
             "handler": "sound",
             "isActive": true,
             "params": {
