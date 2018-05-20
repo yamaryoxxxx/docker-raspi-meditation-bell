@@ -5,14 +5,14 @@
         {
             "cronTime": "* * * * *",
             "handler": "debug",
-            "isActive": false,
+            "isActive": true,
             "params": {
                 "message": "Hello world!"
             }
         },
         
         {
-            "cronTime": "0 5,6,21,22 * * *",
+            "cronTime": "* * * * *",
             "handler": "sound",
             "isActive": true,
             "params": {
