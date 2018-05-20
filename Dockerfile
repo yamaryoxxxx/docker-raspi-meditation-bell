@@ -20,8 +20,6 @@ COPY . /app
 WORKDIR /app
 RUN npm install
 RUN apt-get install -y alsa-utils
-RUN amixer scontrols
-RUN amixer sset 'PCM' 50%
 
 # execute app
 CMD nodemon app.js
