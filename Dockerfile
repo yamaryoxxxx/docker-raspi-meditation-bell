@@ -18,6 +18,7 @@ RUN npm install -g nodemon
 # copy and build scripts
 COPY . /app
 RUN ls /app -a
+RUN npm install
 
 # execute app
 WORKDIR /app
