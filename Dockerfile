@@ -1,5 +1,5 @@
-#FROM resin/rpi-raspbian:stretch
-FROM debian:stretch
+FROM resin/rpi-raspbian:stretch
+#FROM debian:stretch
 MAINTAINER yamaryoxxxx@gmail.com
 
 # initialization
