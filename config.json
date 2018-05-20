@@ -16,6 +16,7 @@
             "handler": "sound",
             "isActive": true,
             "params": {
+                "volume": 10,
                 "filename": "data/sound/bell-01.wav"
             }
         }
