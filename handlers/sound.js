@@ -1,15 +1,10 @@
 const Sound = require('aplay');
+const player = new Sound();
 module.exports = function(_params){
     const params = _params;
-    var sound = null;
     return {
         exec: function(){
-            if(!sound){
-                sound = new Sound().play(params.filename);
-            }
-            else{
-                sound.resume();
-            }
+            player.play(params.filename);
             console.log('play', params.filename);
         }
     }
