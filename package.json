@@ -1,0 +1,23 @@
+{
+  "name": "docker-raspi-meditation-bell",
+  "version": "1.0.0",
+  "description": "Ring bell at fixed time every day",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yamaryoxxxx/docker-raspi-meditation-bell.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yamaryoxxxx/docker-raspi-meditation-bell/issues"
+  },
+  "homepage": "https://github.com/yamaryoxxxx/docker-raspi-meditation-bell#readme",
+  "dependencies": {
+    "aplay": "^1.2.0",
+    "cron": "^1.3.0"
+  }
+}
