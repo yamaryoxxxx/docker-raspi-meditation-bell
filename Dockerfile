@@ -16,10 +16,10 @@ RUN apt-get install -y --allow-unauthenticated nodejs
 RUN npm install -g nodemon
 
 # copy and build scripts
-RUN npm install
 RUN apt-get install -y alsa-utils
 COPY . /app
 WORKDIR /app
+RUN npm install
 
 # execute app
 CMD nodemon app.js
