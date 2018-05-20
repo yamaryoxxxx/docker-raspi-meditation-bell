@@ -1,4 +1,5 @@
 #! /bin/bash
+git pull
 docker kill meditation-bell
 docker rm meditation-bell
 docker build -t raspi-meditation-bell .
