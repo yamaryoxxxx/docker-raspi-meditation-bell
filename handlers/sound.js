@@ -4,8 +4,8 @@ const execSync = require('child_process').execSync;
 module.exports = function(_params){
     const params = _params;
     const player = new Sound();
-    execSync('amixer scontrols');
-    execSync(`amixer sset "PCM" ${params.volume}`);    
+//    execSync('amixer scontrols');
+//    execSync(`amixer sset "PCM" ${params.volume}`);    
            
     player.play(params.filename);
 
